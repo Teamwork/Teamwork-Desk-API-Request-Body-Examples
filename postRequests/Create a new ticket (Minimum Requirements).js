@@ -17,7 +17,7 @@ const raw = JSON.stringify({
   },
   "agent": {
     "id": agentId
-  },//Remove agent object to leave ticket unassigned
+  }//Remove agent object to leave ticket unassigned
 });
 
 const requestOptions = {
