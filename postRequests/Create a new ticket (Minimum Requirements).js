@@ -13,7 +13,7 @@ const raw = JSON.stringify({
     "id": inboxId
   },
   "customer": {
-    "email": "marc.cashman@teamwork.com"
+    "email": "api@teamwork.com"
   },
   "agent": {
     "id": agentId
