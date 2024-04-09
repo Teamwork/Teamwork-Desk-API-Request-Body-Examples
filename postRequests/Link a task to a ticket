@@ -1,0 +1,18 @@
+const myHeaders = new Headers();
+APIKEY = "apiKeyHere"
+siteName = "yourSiteName"
+ticketId = "ticketIdHere"
+taskId = "taskIdHere"
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Authorization", "Bearer "+APIKEY);
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  redirect: "follow"
+};
+
+fetch("https://"+siteName+".teamwork.com/desk/api/v2/tickets/"+ticketId+"/tasks/"+taskId+".json", requestOptions)
+  .then((response) => response.text())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
