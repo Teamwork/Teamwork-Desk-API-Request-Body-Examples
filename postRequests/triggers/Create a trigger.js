@@ -1,7 +1,6 @@
 const myHeaders = new Headers();
 APIKEY = "apiKeyHere"
 siteName = "yourSiteName"
-taskId = "taskIdHere"
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Authorization", "Bearer "+APIKEY);
 
