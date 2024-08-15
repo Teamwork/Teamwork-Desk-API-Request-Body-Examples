@@ -1,3 +1,6 @@
+// This is the first step which creates the file reference. 
+// The payload returned from this request is required for the second step
+// API Refernce document: https://apidocs.teamwork.com/docs/desk/v2/file/post-v2-files-ref-json
 const myHeaders = new Headers();
 APIKEY = "apiKeyHere"
 SITENAME = "yourSiteName"
