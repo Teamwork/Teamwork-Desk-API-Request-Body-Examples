@@ -1,4 +1,5 @@
 // This is the second step which requires the file to be uploaded. 
+// The payload returned from step 1 will have the information required for the CURLOPT_POSTFIELDS section of this step
 // The file path must be from a local machine driving the script ie: '/Users/marc.cashman/Desktop/Time Sheet.png'
 // API Refernce document: https://apidocs.teamwork.com/docs/desk/v2/file/post-v2-files-ref-json
 <?php
