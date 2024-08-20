@@ -1,7 +1,8 @@
+// Endpoint document: https://apidocs.teamwork.com/docs/desk/v2/messages/post-v2-tickets-ticket-id-messages-json
 const myHeaders = new Headers();
 APIKEY = "apiKeyHere"
 siteName = "yourSiteName"
-agentId = agentIdHere//integer
+agentId = agentIdHere //integer
 ticketId = "ticketIdHere"
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Authorization", "Bearer "+APIKEY);
