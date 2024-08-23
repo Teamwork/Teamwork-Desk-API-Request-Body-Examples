@@ -1,9 +1,10 @@
-// https://apidocs.teamwork.com/docs/desk/v2/customers/patch-v2-customers-id-json
+// Endpoint URL: https://apidocs.teamwork.com/docs/desk/v2/customers/patch-v2-customers-id-json
 const myHeaders = new Headers();
 APIKEY = "apiKeyHere"
 siteName = "yourSiteName;
 customerId = "customerIdHere"; // Customer is the top level entity for your customer
-contactId = "contactIdHere"; / Contact is a subset of the customer as a contact method
+contactIdMain = "contactIdMainHere"; // Contact is a subset of the customer as a contact method
+contactIdAlt = "contactIdAltHere"; // Alternative email address if appliciable
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Authorization", "Bearer "+APIKEY);
 
@@ -38,11 +39,17 @@ const raw = JSON.stringify({
         ],
         "contacts": [
             {
+                "id": contactIdMain,
                 "value": "support@example.com",
-                "isMain": true,
                 "type": "email",
-                "id": contactId,
+                "isMain": true,
                 "delete": false
+            },
+            {
+                "id": contactIdAlt,
+                "value": "sales@teamwork.com",
+                "type": "email",
+                "isMain": false
             }
         ]
     }
