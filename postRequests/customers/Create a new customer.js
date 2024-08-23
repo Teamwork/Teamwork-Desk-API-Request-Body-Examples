@@ -1,3 +1,5 @@
+// Endpoint URL: https://apidocs.teamwork.com/docs/desk/v2/customers/post-v2-customers-json
+// This will create a new customer with some basic information including a main email address, alternative email address and social media information
 const myHeaders = new Headers();
 APIKEY = "apiKeyHere"
 siteName = "yourSiteName"
@@ -12,10 +14,7 @@ const raw = JSON.stringify({
     "phone": "123456789",
     "mobile": "987654321",
     "address": "Teamwork Campus One, Blackpool Retail Park, Blackpool, Cork, T23 F902, Ireland",
-    "avatarURL": "",
-    "alternativeEmails": [
-      "sales@teamwork.com"
-    ]
+    "avatarURL": ""
   },
   "included": {
     "companies": [
@@ -26,9 +25,14 @@ const raw = JSON.stringify({
     ],
     "contacts": [
       {
-        "value": "support12345@teamwork.com",
+        "value": "support@teamwork.com",
         "type": "email",
         "isMain": true
+      },
+      {
+        "value": "sales@teamwork.com",
+        "type": "email",
+        "isMain": false
       },
       {
         "value": "@teamwork",
