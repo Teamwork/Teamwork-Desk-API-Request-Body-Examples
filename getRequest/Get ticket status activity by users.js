@@ -26,6 +26,8 @@ async function fetchTicketActivities() {
     let activities = data.included.ticketactivities
     let users = data.included.users
 
+    //console.log(activities) // Remove this comment block to see all of the ticket activites
+    
     activities.forEach((activity, index) => {
         if (activity.eventType == "status" && activity.createdBy.type == "users") {
             console.log(`Activity Id: ${activity.id}`);
