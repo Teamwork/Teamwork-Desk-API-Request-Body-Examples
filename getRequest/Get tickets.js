@@ -16,7 +16,7 @@ const requestOptions = {
 
 async function fetchTickets() {
 
-    let ticketsUrl = "https://" + siteName + ".teamwork.com/desk/api/v2/tickets.json?page=" + page + "&pageSize=100"
+    let ticketsUrl = "https://" + siteName + ".teamwork.com/desk/api/v2/tickets.json?page=" + page + "&pageSize=100&includes=messages"
     const response = await fetch(ticketsUrl, requestOptions)
     let data = await response.json()
     console.log(data)
