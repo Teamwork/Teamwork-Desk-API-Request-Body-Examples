@@ -4,7 +4,7 @@ const myHeaders = new Headers();
 APIKEY = "apiKeyHere"
 siteName = "yourSiteName"
 inboxName = "inboxNameHere"
-inboxLocalPart = "apiinbox"// the local part is a code name created based on the inbox name with out spaces and capatilization
+inboxLocalPart = "inboxLocalPartHere"// the local part is a code name created based on the inbox name with out spaces and capatilization
 inboxEmail = "inboxEmailHere"
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Authorization", `Bearer ${APIKEY}`);
