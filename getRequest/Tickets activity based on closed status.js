@@ -56,15 +56,15 @@ async function fetchTicketActivities() {
                         if (`${activity.createdBy.id}` == customer.id) {
                             console.log(`Customer changed status: ${customer.firstName} ${customer.lastName}\n`);
                         }
-                    });
-                    console.log(`Activity Id: ${activity.id}`);
-                    console.log(`Activity Type: ${activity.eventType}`);
-                    console.log(`Status Id: ${activity.status.id}`);
-                    console.log(`Status Name: ${ticketStatuses[statusRow].name}`)
-                    console.log(`Activity Date: ${activity.createdAt}`);
-                    console.log(`Status Icon: ${activity.icon}`);
-                    console.log(`ticket Id: ${activity.ticket.id}`);    
-            }            
+                    });   
+            }   
+            console.log(`Activity Id: ${activity.id}`);
+            console.log(`Activity Type: ${activity.eventType}`);
+            console.log(`Status Id: ${activity.status.id}`);
+            console.log(`Status Name: ${ticketStatuses[statusRow].name}`)
+            console.log(`Activity Date: ${activity.createdAt}`);
+            console.log(`Status Icon: ${activity.icon}`);
+            console.log(`ticket Id: ${activity.ticket.id}`); 
         }
     });
 }
