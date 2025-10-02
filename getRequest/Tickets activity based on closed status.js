@@ -65,6 +65,7 @@ async function fetchTicketActivities() {
             console.log(`Activity Date: ${activity.createdAt}`);
             console.log(`Status Icon: ${activity.icon}`);
             console.log(`ticket Id: ${activity.ticket.id}`); 
+            }
         }
     });
 }
