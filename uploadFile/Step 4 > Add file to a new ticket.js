@@ -4,7 +4,7 @@
 const myHeaders = new Headers();
 APIKEY = "apiKeyHere"
 SITENAME = "yourSiteName"
-FILEID = "yourFileId"
+FILEID = yourFileId // int
 AGENTID = "yourAgentId"
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Authorization", "Bearer "+APIKEY);
