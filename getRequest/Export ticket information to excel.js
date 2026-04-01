@@ -46,7 +46,7 @@ async function fetchTicketMessages() {
             console.log(`Fetching page ${currentPage}...`);
             
             // Notice we added &page=${currentPage} to the URL
-            let ticketsUrl = `https://${siteName}.teamwork.com/desk/api/v2/tickets.json?archived=archivedTickets&includes=messages&pageSize=50&page=${currentPage}`;
+            let ticketsUrl = `https://${siteName}.teamwork.com/desk/api/v2/tickets.json?archived=${archivedTickets}&includes=messages&pageSize=50&page=${currentPage}`;
             
             const ticketsResponse = await fetch(ticketsUrl, requestOptions);
             
