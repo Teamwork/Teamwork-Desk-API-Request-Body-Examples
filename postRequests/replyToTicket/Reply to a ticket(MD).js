@@ -33,7 +33,7 @@ const requestOptions = {
     redirect: "follow"
 };
 
-fetch("https://"+siteName+".teamwork.com/desk/api/v2/tickets/"+ticketId+"/messages.json", requestOptions)
+fetch(`https://${siteName}.teamwork.com/desk/api/v2/tickets/${ticketId}/messages.json`, requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.error(error));
